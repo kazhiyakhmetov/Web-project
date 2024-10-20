@@ -1,0 +1,105 @@
+html,
+body {
+  background: #dae3e7;
+  font-family: Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  font-size: 36px;
+}
+
+.menu_container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.menu {
+  background-color: rgb(22, 97, 104);
+  border: 1px solid black;
+  padding: 20px;
+  position: relative;
+  margin: 10px;
+}
+
+.sushi {
+    background-color: #df6a2f;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+  }
+  
+  .snacks {
+    background-color: #2522c7;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+  }
+  
+  .coca-cola {
+    background-color: #ff0000; 
+    color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+  }
+  
+
+
+.menu p {
+  font-size: 18px;
+  padding-top: 25px;
+}
+
+@media (min-width: 992px) {
+  .menu {
+      width: 31%;
+      float: left;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    width: 47%;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .menu:nth-child(3) {
+      width: 96.5%;
+      float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
