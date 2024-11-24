@@ -1,105 +1,106 @@
-html,
-body {
-  background: #dae3e7;
-  font-family: Arial, sans-serif;
-}
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  body {
+    background-color: #f4f8fb;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+  }
 
-.title {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  .navbar {
+    margin-bottom: 0;
+    background-color: #444;
+    border: none;
+    border-radius: 0;
+  }
 
-.title h1 {
-  font-size: 36px;
-}
-
-.menu_container {
-  width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.menu {
-  background-color: rgb(22, 97, 104);
-  border: 1px solid black;
-  padding: 20px;
-  position: relative;
-  margin: 10px;
-}
-
-.sushi {
-    background-color: #df6a2f;
-    color: white;
-    border: 1px solid black;
-    padding: 5px 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
+  .navbar-brand {
+    color: #fff;
     font-size: 24px;
   }
-  
-  .snacks {
-    background-color: #2522c7;
+
+  .navbar-nav > li > a {
     color: white;
-    border: 1px solid black;
-    padding: 5px 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 24px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
   }
-  
-  .coca-cola {
-    background-color: #ff0000; 
-    color: white;
-    border: 1px solid black;
-    padding: 5px 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 24px;
+
+  .navbar-nav > li > a:hover {
+    color: #ddd !important;
   }
-  
 
+  .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
 
-.menu p {
-  font-size: 18px;
-  padding-top: 25px;
-}
+  .title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
 
-@media (min-width: 992px) {
+  .title h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+  }
+
   .menu {
-      width: 31%;
-      float: left;
+    background-color: #eef2f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .menu {
-    width: 47%;
-    float: left;
+  .menu h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
   }
 
-  .menu:nth-child(3) {
-      width: 96.5%;
-      float: left;
+  /* Цвета для каждого заголовка */
+  .first {
+    color: #ffffff;
+    background-color: #ff7043; 
   }
-}
 
-@media (max-width: 767px) {
-  .menu {
-      width: 100%;
-      margin-bottom: 20px;
+  .second {
+    color: #ffffff;
+    background-color: #42a5f5; 
   }
-}
+
+  .third {
+    color: #ffffff;
+    background-color: #66bb6a; 
+  }
+
+  .menu p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4 {
+      width: 50%;
+    }
+
+    .col-md-4:nth-child(3) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .title h1 {
+      font-size: 34px;
+    }
+
+    .navbar-nav {
+      text-align: center;
+    }
+  }
+
